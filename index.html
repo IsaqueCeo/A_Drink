@@ -4,25 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Drink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Kolker+Brush&family=Milonga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <h1>A Drink</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Drinks ▾</a></li>
                 <li><a href="#">Destaques ▾</a></li>
                 <li><a href="#">Dicas ▾</a></li>
                 <li><a href="#">Temáticos ▾</a></li>
-                <li><input type="text" placeholder="pesquisar"><button>🔍</button></li>
+                <li>
+                    <input type="text" placeholder="pesquisar">
+                    <button>🔍</button>
+                </li>
             </ul>
         </nav>
     </header>
     
     <main>
         <section class="hero">
-            <h1>Um Drink para cada momento.</h1>
-            <div class="arrow">⬇</div>
+            <div class="content">
+                <h2>Um Drink para cada<P> momento.</P></h2>
+                <a href="#explorar-section" class="arrow">⬇</a>
+            </div>
+        </section>
+        
+        <section id="explorar-section" class="explorar-section">
+            <div class="explorar-container">
+                <div class="explorar-text">
+                    <h2>Muito a <span>Explorar</span></h2>
+                    <p>Descubra mais Drinks de acordo com categorias</p>
+                </div>
+                <div class="categoria-cards-container">
+                    <div class="categoria-cards">
+                        <div class="card">
+                            <img src="./img/shorts1.png" alt="Short Drinks">
+                            <div class="card-title">
+                                <h3>Short Drinks</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/shorts2.png" alt="Longe Drinks">
+                            <div class="card-title">
+                                <h3>Longe Drinks</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/shorts3.png" alt="Outro Drink">
+                            <div class="card-title">
+                                <h3>Outro Drink</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/shorts4.png" alt="Outro Drink">
+                            <div class="card-title">
+                                <h3>Outro Drink</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/shorts5.png" alt="Outro Drink">
+                            <div class="card-title">
+                                <h3>Outro Drink</h3>
+                            </div>
+                        </div>
+                        <!-- Adicione mais cards aqui conforme necessário -->
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
