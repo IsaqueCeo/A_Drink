@@ -96,10 +96,6 @@ nav ul li button {
     z-index: 2;
 }
 
-.content h2 p {
-    display: inline;
-}
-
 .arrow {
     margin-top: 20px;
     font-size: 2.5rem;
@@ -165,42 +161,46 @@ nav ul li button {
     padding-right: 20px;
 }
 
-.explorar-text h2 {
-    font-size: 3rem;
+.muito-a {
+    font-family: 'Lancelot', cursive;
+    font-size: 55px;
 }
 
-.explorar-text span {
-    font-weight: bold;
-    font-size: 3.5rem;
-    color: #f4f4f4;
+.explorar {
+    font-family: 'Lao Sans Pro', sans-serif;
+    font-size: 60px;
 }
 
-.explorar-text p {
-    font-size: 1.2rem;
+.descricao {
+    font-family: 'Bona Nova', serif;
+    font-size: 25px;
     margin-top: 10px;
 }
 
 .categoria-cards-container {
-    overflow-x: auto;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 20px;
     width: 100%;
 }
 
 .categoria-cards {
     display: flex;
     gap: 20px;
-    padding-left: 20px;
-    height: 100%;
-    flex-wrap: nowrap;
+    scroll-snap-align: start;
 }
 
 .card {
     position: relative;
-    width: 250px;
+    min-width: 250px;
     height: 350px;
     text-align: center;
     border-radius: 10px;
     overflow: hidden;
-    flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .card img {
