@@ -221,3 +221,180 @@ nav ul li button {
     padding: 10px;
     border-radius: 0 0 10px 10px;
 }
+
+
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 3rem;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .explorar-text {
+        padding-right: 0;
+    }
+
+    .muito-a, .explorar {
+        font-size: 3rem;
+    }
+
+    .descricao {
+        font-size: 1.2rem;
+    }
+
+    .categoria-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo h1 {
+        font-size: 4rem;
+    }
+
+    .content h2 {
+        font-size: 2.5rem;
+        padding: 15px 30px;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .muito-a, .explorar {
+        font-size: 4rem;
+    }
+
+    .descricao {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        min-width: 200px;
+        height: 300px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Seção de Destaque */
+.destaque-section {
+    background-color: #f0f0f0; /* Fundo cinza do container */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destaque-container {
+    background-color: #9C3333; /* Fundo interno da seção em destaque */
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    max-width: 1200px; /* Aumenta o tamanho do container */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* Espaça os itens */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.texto-destaque {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+    font-family: 'Bona Nova', serif;
+}
+
+.texto-destaque h2 {
+    font-size: 2.5rem;
+}
+
+.texto-destaque h2 span {
+    font-family: 'Lancelot', cursive;
+    font-size: 3rem;
+    color: #e4d5a3;
+}
+
+.texto-destaque p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    
+}
+
+.imagem-destaque {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    flex-direction: column;
+    flex: 1;
+}
+
+.imagem-destaque img {
+    border-radius: 10px;
+    width: 300px; /* Define o tamanho da imagem */
+    height: 300px;
+    object-fit: cover; /* Garante que a imagem se ajuste ao container */
+}
+
+.descricao-detalhes {
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Kavivanar', cursive;
+    flex: 1;
+}
+
+.descricao-detalhes h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.descricao-detalhes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.descricao-detalhes ul li {
+    margin-bottom: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .destaque-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagem-destaque img {
+        width: 100%;
+        height: auto;
+    }
+}
+
