@@ -305,7 +305,7 @@ nav ul li button {
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     flex-direction: column; /* Coloca os itens em coluna */
-    flex: 1; /* Permite que a seção utilize espaço disponível */
+    flex: 0.8; /* Permite que a seção utilize espaço disponível */
     text-align: center; /* Garante que o texto também esteja centralizado */
     margin: 0 auto; /* Adiciona margens automáticas para centralizar a seção */
 }
