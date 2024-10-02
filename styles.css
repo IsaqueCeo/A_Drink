@@ -8,7 +8,37 @@ body {
     background-color: #fff;
     color: #fff;
     text-align: center;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Parte de cima: Texto "Um drink para cada momento" */
+.top-section {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Faixa de divisão */
+.divider {
+    height: 50px;
+    background-color: #e9ecef; /* Escolha uma cor para a faixa de divisão */
+    margin: 0; /* Remove o espaço entre as seções */
+}
+
+/* Parte do meio: Texto "Muito a explorar" */
+.middle-section {
+    background-color: #e9ecef;
+    padding: 50px;
+    text-align: center;
 }
 
 header {
@@ -31,7 +61,7 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    background-color: rgba(226, 226, 226, 0.7);
+    background-color: #EEEEEE;
     padding: 15px 0;
     width: 100%;
 }
@@ -41,6 +71,8 @@ nav ul li {
 }
 
 nav ul li a {
+    /* font-weight: bold; Coloca o texto em negrito */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     color: #000000;
     font-family: 'Kavivanar', cursive;
@@ -222,89 +254,9 @@ nav ul li button {
     border-radius: 0 0 10px 10px;
 }
 
-
-@media (max-width: 768px) {
-    .logo h1 {
-        font-size: 3rem;
-    }
-
-    .content h2 {
-        font-size: 2rem;
-        padding: 10px 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .explorar-text {
-        padding-right: 0;
-    }
-
-    .muito-a, .explorar {
-        font-size: 3rem;
-    }
-
-    .descricao {
-        font-size: 1.2rem;
-    }
-
-    .categoria-cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-    }
-
-    .card-title {
-        font-size: 1rem;
-    }
-}
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .logo h1 {
-        font-size: 4rem;
-    }
-
-    .content h2 {
-        font-size: 2.5rem;
-        padding: 15px 30px;
-    }
-
-    nav ul li {
-        margin: 0 15px;
-    }
-
-    .muito-a, .explorar {
-        font-size: 4rem;
-    }
-
-    .descricao {
-        font-size: 1.5rem;
-    }
-
-    .card {
-        min-width: 200px;
-        height: 300px;
-    }
-
-    .card-title {
-        font-size: 1.2rem;
-    }
-}
-
 /* Seção de Destaque */
 .destaque-section {
-    background-color: #f0f0f0; /* Fundo cinza do container */
+    background-color: #e9ecef; /* Fundo cinza do container */
     padding: 50px 20px;
     display: flex;
     justify-content: center;
@@ -331,70 +283,90 @@ nav ul li button {
     font-family: 'Bona Nova', serif;
 }
 
-.texto-destaque h2 {
-    font-size: 2.5rem;
+.texto-destaque h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-.texto-destaque h2 span {
+.texto-destaque h1 span {
     font-family: 'Lancelot', cursive;
-    font-size: 3rem;
+    font-size: 1.7em;
     color: #e4d5a3;
 }
 
 .texto-destaque p {
-    margin-top: 10px;
+    margin-top: 1px;
     font-size: 1.2rem;
-    
 }
 
+/* Modificações solicitadas para centralizar a imagem */
 .imagem-destaque {
     display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-    flex-direction: column;
-    flex: 1;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Coloca os itens em coluna */
+    flex: 1; /* Permite que a seção utilize espaço disponível */
+    text-align: center; /* Garante que o texto também esteja centralizado */
+    margin: 0 auto; /* Adiciona margens automáticas para centralizar a seção */
 }
 
 .imagem-destaque img {
     border-radius: 10px;
     width: 300px; /* Define o tamanho da imagem */
-    height: 300px;
-    object-fit: cover; /* Garante que a imagem se ajuste ao container */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
 }
 
-.descricao-detalhes {
-    margin-top: 20px;
-    text-align: left;
-    font-family: 'Kavivanar', cursive;
-    flex: 1;
-}
-
-.descricao-detalhes h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.detalhes-destaque {
+    flex: 0.5;
     color: #fff;
 }
 
-.descricao-detalhes ul {
-    list-style: none;
-    padding: 0;
+.detalhes-destaque h2 {
+    font-family: 'Lancelot', cursive;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-.descricao-detalhes ul li {
+.detalhes-destaque ul {
+    list-style-type: disc;
+    padding-left: 10px;
+}
+
+.detalhes-destaque li {
+    font-size: 1.2em;
     margin-bottom: 5px;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .logo h1 {
+        font-size: 3rem;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .explorar-container {
+        flex-direction: column;
+    }
+
+    .texto-destaque h1 {
+        font-size: 2rem;
+    }
+
     .destaque-container {
         flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
     .imagem-destaque img {
         width: 100%;
-        height: auto;
     }
 }
-
