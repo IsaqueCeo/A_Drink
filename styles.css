@@ -9,8 +9,24 @@ body {
     color: #fff;
     text-align: center;
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 1440px;
+    max-height: 3365px;  
+    width: 100%;
+    
+}
+header{
+    z-index: 100;
+    position: absolute;
+    /* top: 0; */
+    /* text-align: center; */
+    /* padding-top: 10px; */
+}
+
+main{
+    width: 80%;
+    margin: 0;
 }
 
 .navbar {
@@ -29,10 +45,17 @@ body {
 
 /* Faixa de divisão */
 .divider {
-    height: 50px;
+    height: 100px;
     background-color: #e9ecef; /* Escolha uma cor para a faixa de divisão */
     margin: 0; /* Remove o espaço entre as seções */
 }
+
+.divider2 {
+    height: 30px;
+    background-color: #e9ecef; /* Escolha uma cor para a faixa de divisão */
+    margin: 0; /* Remove o espaço entre as seções */
+}
+
 
 /* Parte do meio: Texto "Muito a explorar" */
 .middle-section {
@@ -41,14 +64,7 @@ body {
     text-align: center;
 }
 
-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    text-align: center;
-    padding-top: 10px;
-}
+
 
 .logo h1 {
     font-family: 'Kolker Brush', cursive;
@@ -63,7 +79,7 @@ nav ul {
     list-style-type: none;
     background-color: #EEEEEE;
     padding: 15px 0;
-    width: 100%;
+
 }
 
 nav ul li {
@@ -263,6 +279,7 @@ nav ul li button {
     align-items: center;
 }
 
+
 .destaque-container {
     background-color: #9C3333; /* Fundo interno da seção em destaque */
     color: #fff;
@@ -270,11 +287,13 @@ nav ul li button {
     display: flex;
     padding: 20px;
     max-width: 1200px; /* Aumenta o tamanho do container */
+    max-height: 532px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: space-between; /* Espaça os itens */
     align-items: center; /* Centraliza os itens verticalmente */
 }
+
 
 .texto-destaque {
     flex: 1;
@@ -312,7 +331,7 @@ nav ul li button {
 
 .imagem-destaque img {
     border-radius: 10px;
-    width: 300px; /* Define o tamanho da imagem */
+    width: 200px; /* Define o tamanho da imagem */
     height: auto; /* Ajusta a altura automaticamente para manter a proporção */
     max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
 }
@@ -368,5 +387,124 @@ nav ul li button {
 
     .imagem-destaque img {
         width: 100%;
+    }
+}
+
+/* Estilos para a seção de "Tematizar" */
+.tematizar-section {
+    background-color: #FAFAFA;
+    padding: 40px 0;
+}
+
+.tematizar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px; /* Largura máxima para centralizar */
+    margin: 0 auto;
+}
+
+.tematizar-texto {
+    background-color: #C0413B; /* Cor de fundo aplicada somente no texto */
+    color: #FFFFFF;
+    padding: 40px;
+    border-radius: 20px;
+    width: 523px; /* Largura exata */
+    height: 548px; /* Altura exata */
+    font-family: 'Bona Nova', serif;
+}
+
+.tematizar-texto h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 55px; /* Tamanho para "Inovar pede" */
+    width: 288px; /* Largura de "Inovar pede" */
+    height: 61px; /* Altura de "Inovar pede" */
+    line-height: 61px; /* Para alinhar com a altura */
+    color: #FFFFFF;
+}
+
+.tematizar-texto h1 span {
+    font-size: 80px; /* Tamanho para "Tematizar" */
+    width: 353px; /* Largura de "Tematizar" */
+    height: 88px; /* Altura de "Tematizar" */
+    font-family: 'Kolker Brush', cursive;
+    color: #FFFFFF;
+    line-height: 88px; /* Para alinhar com a altura */
+}
+
+.tematizar-texto p:first-of-type {
+    font-size: 25px; /* Tamanho para "Para a realização de uma festa..." */
+    width: 3660px; /* Largura do texto */
+    height: 90px; /* Altura do texto */
+    line-height: 30px; /* Altura da linha para espaçamento adequado */
+    color: #F1F1F1;
+    font-family: 'Milonga', cursive;
+}
+
+.tematizar-texto p:first-of-type strong {
+    color: #FFFFFF;
+}
+
+.tematizar-texto p:last-of-type {
+    font-size: 25px; /* Tamanho para "Descubra dicas de Drinks..." */
+    width: 378px; /* Largura do texto */
+    height: 60px; /* Altura do texto */
+    line-height: 30px; /* Alinhamento do texto */
+    color: #F1F1F1;
+    font-family: 'Milonga', cursive;
+}
+
+.tematizar-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 523px; /* Mesma largura do texto */
+    height: 548px; /* Mesma altura do texto */
+}
+
+.tematizar-card {
+    position: relative;
+    width: 240px; /* Ajuste para caber na grid */
+    height: 260px; /* Proporção aproximada das imagens */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tematizar-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tematizar-card-titulo {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Lancelot', cursive;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 900px) {
+    .tematizar-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tematizar-texto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .tematizar-cards-container {
+        width: 100%;
+        height: auto;
+    }
+    .tematizar-card {
+        width: 100%;
+        height: auto;
     }
 }
